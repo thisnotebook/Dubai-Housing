@@ -14,7 +14,7 @@ export const Amenities = () => {
 
       <div>
         <Card />
-        <p className='text-xs md:text-sm text-center md:text-right text-gray-400 font-light'>*T&Cs apply | ** Based on similar branded projects in the last 2 years. Source 1 | Source 2</p>
+        <p className='w-[95%] text-xs md:text-sm text-center md:text-right text-gray-400 font-light'>*T&Cs apply | ** Based on similar branded projects in the last 2 years. Source 1 | Source 2</p>
       </div>
     </div>
   )

@@ -1,5 +1,6 @@
 'use client'
 import React, {useState} from 'react'
+import {FullView} from './fullview'
 import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs"
 
 const slides = [
@@ -38,7 +39,8 @@ export const Carousel = () => {
        }
   return (
     <div>
-    <div className=' relative flex justify-center items-center w-[100%] h-[300px] md:h-[450px] lg:h-[600px] object-cover'>
+    <div className='flex flex-col items-center justify-center '>
+    <div className=' relative flex justify-center items-center w-[95%] md:w-[90%] h-[200px] md:h-[400px] lg:h-[500px] object-cover'>
        <img src="/left1.png" alt='left' onClick={prevSlide} className='w-[20px] h-[20px] md:w-[30px] md:h-[30px]   absolute left-5 md:left-10 cursor-pointer filter drop-shadow-lg'/>
         {slides.map((slide, idx) => (
         <img
@@ -53,16 +55,17 @@ export const Carousel = () => {
 </span>
 
       </div>
-
-      <span className='flex overflow-x-auto scroll-snap-x-mandatory gap-1 md:gap-3 my-2 md:my-3 p-1 md:p-2 '>
+ 
+      <span className='flex justify-center overflow-x-auto scroll-snap-x-mandatory gap-1 md:gap-3 my-2 md:my-3 p-1 md:p-2 w-[95%] md:w-[90%] '>
     {slides.map((slide, idx)=>{
         return <img
-        className={` scroll-snap-align-start flex-none rounded-md object-cover shadow-lg w-[100px] h-[75px] md:w-[300px] md:h-[175px] cursor-pointer hover:scale-105 duration-30`}
+        className={` scroll-snap-align-start flex-none rounded-md object-cover shadow-lg w-[100px] h-[75px] md:w-[300px] md:h-[150px]  cursor-pointer hover:scale-105 duration-30`}
         onClick={()=>setItem(idx)}
         src={slide.src} alt={slide.alt} key={idx} />
     })}
 </span>
-
+</div>
+       
       </div>
   )
 }

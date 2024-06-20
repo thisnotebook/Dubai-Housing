@@ -2,8 +2,10 @@ import React from "react";
 import "./custom.css";
 export const Card = () => {
   return (
-    <div className="grid grid-cols-2  md:grid-cols-4 gap-6 py-10 px-4">
-      <div className="bg-white py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-lg flex flex-col items-center">
+    <div className="grid grid-cols-2  md:flex md:justify-center gap-2 md:gap-8 lg:gap-12 py-10 px-4 md:px-8 lg:px-16">
+      {/* <div className="grid grid-cols-2  md:grid-cols-4 gap-2 md:gap-8 lg:gap-16 py-10 px-4 md:px-8 lg:px-16"> */}
+      <div className="bg-white   md:w-[175px] lg:w-[200px]  py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-xl flex flex-col items-center">
+        {/*       <div className="bg-white  py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-lg flex flex-col items-center"> */}
         <img
           src="/amenities1.jpeg"
           alt="amenities1"
@@ -13,7 +15,7 @@ export const Card = () => {
           Floating Pools
         </h1>
       </div>
-      <div className="bg-white py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-lg flex flex-col items-center">
+      <div className="bg-white md:w-[175px] lg:w-[200px]  py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-xl flex flex-col items-center">
         <img
           src="/amenities2.jpeg"
           alt="amenities2"
@@ -23,7 +25,7 @@ export const Card = () => {
           Spacious Cabins Like Rooms
         </h1>
       </div>
-      <div className="bg-white py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-lg flex flex-col items-center">
+      <div className="bg-white md:w-[175px] lg:w-[200px]  py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-xl flex flex-col items-center">
         <img
           src="/amenities3.jpeg"
           alt="amenities3"
@@ -33,7 +35,7 @@ export const Card = () => {
           Sea Facing Swimming Pools
         </h1>
       </div>
-      <div className="bg-white py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-lg flex flex-col items-center">
+      <div className="bg-white md:w-[175px] lg:w-[200px]  py-4 lg:py-6 px-2 lg:px-3 rounded-md shadow-xl flex flex-col items-center">
         <img
           src="/amenities4.png"
           alt="amenities4"
