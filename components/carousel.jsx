@@ -1,7 +1,5 @@
 'use client'
 import React, {useState} from 'react'
-import {FullView} from './fullview'
-import {BsArrowLeftCircleFill, BsArrowRightCircleFill} from "react-icons/bs"
 
 const slides = [
     {
